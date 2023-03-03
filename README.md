@@ -113,5 +113,3 @@ With the successful implementation of live facial recognition (using the webcam)
 
 
 The final code **pyduino.py** imports the other code files as modules and combines them in a coherent fashion to ensure the proper working of the project
-
-A brief demonstration of the project is shown below:
