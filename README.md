@@ -90,28 +90,28 @@ The Python code written to send data to Arduino can be found in **arduino.py** a
 2. With these libraries installed, I created folders within **Train_Test_Images/** directory of to hold the pictures for training the model as well as the pictures for testing the accuracy of my model in detecting the faces it was trained on. The folders were named **known** and **unknown**; where training images are put in the **known** folder and vice versa
 
 3. Code was then written to first train the model using the face recognition library and then test the model with some of these pictures from the ‘unknown’ folder.The code used can be seen below:
-ADD 'FACERECOG IMAGE HERE'
+![FaceRecogCode1](images/face_recognitionOpenCV.PNG)
 
 The picture I used to train the model is shown below:
-ADD 'JEFFREY ASIDEU PICTURE HERE...'
+![Train Image](Train_Test_Images/known/Jeffrey Asiedu.jpeg)
 
 #### RESULTS AND DISCUSSION
 After running the code on some sample ‘unknown’ images, The model accurately recognized my face within the pictures and for the faces it was not trained on, it labeled them as ‘Unknown Person’
 Snapshots of the results of running the code can be seen below:
-ADD 'FACE RECOGNITION RESULT 1'
+![Result1](images/face_recognitionResult1.PNG)
 
-ADD 'FACE RECOG RESULT 2'
+![Result2](images/face_recognitionResult2.PNG)
 
 By testing on a few more images, it was seen that the Facial recognition model works quite well.
 
 The next thing I intended to do was to do a ‘live’ facial recognition using the webcam of my computer instead of just recognizing my face from static images.
 I made some changes to the earlier code to start the webcam and allow the model to recognize my face from the frames picked up by the webcam.
 The result is shown in the image below:
-ADD 'FACE RECOG 3'
+![Result3](images/face_recognitionResult3.PNG)
 
 With the successful implementation of live facial recognition (using the webcam), the code was incorporated into Samaritan using **faceRecog.py**
 
 
 The final code **pyduino.py** imports the other code files as modules and combines them in a coherent fashion to ensure the proper working of the project
 
-A brief demonstration of the project is show below:
+A brief demonstration of the project is shown below:
