@@ -13,6 +13,14 @@ In order to build this project, I found various resources from different instruc
 
 - [@ziegler121](https://www.github.com/ziegler121)
 
+## Repository Contents
+* **ard_AI/** - This directory contains the Arduino code that must be uploaded to the board to facilitate reception of sent data from Python
+* **images/** - For keeping certain relevant images
+* **ai.py** - This contains code for the backbone of the ai Class (containing methods for Speech Recognition) 
+* **arduino.py** - This contains code for passsing data from Python to Arduino
+
+
+
 ## Things used in this project
 ### Hardware Components
 - Raspberry Pi (preferably); but can also be done on a PC (Windows, Mac, or Linux)
@@ -50,9 +58,21 @@ Then activate the virtual environment using:
 ```
 ***NOTE***: Make sure the right Virtual Environment interpreter is selected in VS Code
 
-There is the need to also install some other libraries at this stage using:
+2. ***Installation of relevant libraries***:There is the need to also install some relevant libraries at this stage using:
 ```bash
   pip install pyttsx3
   pip install speechrecognition
   pip install pyaudio
 ```
+
+The final code for this section can be found in **ai.py**
+
+
+### Python-Arduino Communication
+One very important aspect of this project is to ensure communication between the Python and Arduino sides of the project; such that when speech is recognized using the Python code, data can be send to the Arduino to perform the specific actuation as the user has commanded.
+The ***pyserial*** library is needed for such tasks so if not installed, it can be installed using:
+```bash
+  pip install pyserial
+```
+
+The Python code written to send data to Arduino can be found in **arduino.py** and the Arduino code to receive the incoming data to perform the corresponding action is also found in the **ard_AI/** directory.
