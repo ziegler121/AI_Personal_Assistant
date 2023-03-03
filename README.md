@@ -85,7 +85,7 @@ The Python code written to send data to Arduino can be found in **arduino.py** a
 ```bash
   pip install Cmake
   pip install opencv-python==4.5.3.56
-  pip install face_recognitio==1.2.3
+  pip install face_recognition==1.2.3
 ```
 2. With these libraries installed, I created folders within **Train_Test_Images/** directory of to hold the pictures for training the model as well as the pictures for testing the accuracy of my model in detecting the faces it was trained on. The folders were named **known** and **unknown**; where training images are put in the **known** folder and vice versa
 
