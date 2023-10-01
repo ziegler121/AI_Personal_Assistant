@@ -98,9 +98,8 @@ The picture I used to train the model is shown below:
 #### RESULTS AND DISCUSSION
 After running the code on some sample ‘unknown’ images, The model accurately recognized my face within the pictures and for the faces it was not trained on, it labeled them as ‘Unknown Person’
 Snapshots of the results of running the code can be seen below:
-![Result1](images/face_recognitionResult1.PNG)
 
-![Result2](images/face_recognitionResult2.PNG)
+![Result](images/face_recognitionResult2.PNG)
 
 By testing on a few more images, it was seen that the Facial recognition model works quite well.
 
